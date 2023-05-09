@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Bikerino-Prototype</string>
+    <string name="button_cycle_default">Record cycle</string>
+    <string name="button_crash_default">Record crash</string>
+    <string name="accelerometerValues_default">Accelerometer Values</string>
+    <string name="gyroscopeValues_default">Gyroscope Values</string>
+    <string name="pressureValues_default">Pressure Values</string>
+    <string name="recording_cycle">Recording cycle...</string>
+    <string name="record_cycle">Record cycle</string>
+    <string name="recording_crash">Recording crash...</string>
+    <string name="record_crash">Record crash</string>
+
+</resources>

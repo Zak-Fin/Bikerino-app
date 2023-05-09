@@ -1,2 +1,2 @@
-# Bikerino-app
-The main app bikerino
+# Bikerino
+Crash detection and cycling activity recognition android application
