@@ -121,11 +121,11 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         fileName = "crash_" + timestamp + ".txt";
         isCapturing = !isCapturing;
         if(isCapturing) {
-            crashButton.setText("Recording crash...");
+            crashButton.setText("In progress...");
             crashButton.setBackgroundColor(dark_purple);
         }
         else{
-            crashButton.setText("Record crash");
+            crashButton.setText("Start");
             crashButton.setBackgroundColor(light_purple);
         }
     }
