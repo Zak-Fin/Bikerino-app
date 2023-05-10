@@ -25,8 +25,11 @@ import java.io.OutputStreamWriter;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Timer;
+import java.util.TimerTask;
 
 public class MainActivity extends AppCompatActivity implements SensorEventListener{
     protected SensorManager sensorManager;
@@ -39,9 +42,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     protected String fileName;
     protected Boolean isCapturing = false;
     protected Button cycleButton;
-    protected Button crashButton;
     protected int light_purple;
     protected int dark_purple;
+
+    protected Timer timer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,14 +79,13 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
         // Initialize TextViews
         accelerometerValuesTextView = findViewById(R.id.accelerometerValuesTextView);
-        gyroscopeValuesTextView = findViewById(R.id.gyroscopeValuesTextView2);
-        pressureValuesTextView = findViewById(R.id.pressureValuesTextView3);
 
         cycleButton = findViewById(R.id.cycleButton);
-        crashButton = findViewById(R.id.crashButton);
 
         light_purple = Color.rgb(187,134, 252);
         dark_purple = Color.rgb(120,86, 162);
+        getSensorData();
+
     }
 
     @Override
@@ -102,10 +105,12 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
     public void onCycleClick(View view){
+        System.out.println("something happening2");
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(new Date());
         fileName = "cycle_" + timestamp + ".txt";
         isCapturing = !isCapturing;
         if(isCapturing) {
+            System.out.println("something happening");
             cycleButton.setText("Recording cycle...");
             cycleButton.setBackgroundColor(dark_purple);
         }
@@ -115,20 +120,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
-    public void onCrashClick(View view){
-        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(new Date());
-        fileName = "crash_" + timestamp + ".txt";
-        isCapturing = !isCapturing;
-        if(isCapturing) {
-            crashButton.setText("In progress...");
-            crashButton.setBackgroundColor(dark_purple);
-        }
-        else{
-            crashButton.setText("Start");
-            crashButton.setBackgroundColor(light_purple);
-        }
-    }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void saveSensorDataToFile(String fileName, String data) {
@@ -163,6 +154,68 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }
     }
 
+    public void doClassifier(ArrayList<String> accelerometerDataList,ArrayList<String> gyroscopeDataList,ArrayList<String> barometerDataList){
+        System.out.println("was here");
+        accelerometerValuesTextView.setText("Have you crashed: \n" + "No");
+    }
+    public void getSensorData(){
+        sensorManager.registerListener(new SensorEventListener() {
+            private ArrayList<String> accelerometerDataList = new ArrayList<>();
+            private ArrayList<String> gyroscopeDataList = new ArrayList<>();
+            private ArrayList<String> barometerDataList = new ArrayList<>();
+            protected long startTime = 0;
+
+
+            @RequiresApi(api = Build.VERSION_CODES.O)
+            @Override
+            public void onSensorChanged(SensorEvent event) {
+                if(isCapturing){
+                if (startTime == 0) {
+                    startTime = event.timestamp;
+                }
+
+                long elapsedTime = event.timestamp - startTime;
+                if (elapsedTime >= 4.9 * 1000000000L) { // Check if 5 seconds have elapsed
+                    doClassifier(accelerometerDataList,gyroscopeDataList,barometerDataList);
+                    startTime = event.timestamp;
+                    accelerometerDataList.clear();
+                    gyroscopeDataList.clear();
+                    barometerDataList.clear();
+                }
+                if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
+                    // Handle accelerometer values here
+                    float ax = event.values[0]; // Acceleration along x-axis
+                    float ay = event.values[1]; // Acceleration along y-axis
+                    float az = event.values[2]; // Acceleration along z-axis
+                    String accelerometerValuesString = "\nX" + ax + "Y" + ay + "Z" + az;
+                    accelerometerDataList.add(accelerometerValuesString);
+                }
+
+                if (event.sensor.getType() == Sensor.TYPE_GYROSCOPE) {
+                    float gx = event.values[0]; // Rotation rate around x-axis
+                    float gy = event.values[1]; // Rotation rate around y-axis
+                    float gz = event.values[2]; // Rotation rate around z-axis
+                    String gyroscopeValuesString = "\nX" + gx + "Y" + gy + "Z" + gz;
+                    gyroscopeDataList.add(gyroscopeValuesString);
+
+                }
+                // Handle pressure sensor value
+                if (event.sensor.getType() == Sensor.TYPE_PRESSURE) {
+                    float pressure = event.values[0]; // Atmospheric pressure
+                    String pressureValueString = "\nP" + String.valueOf(pressure);
+                    barometerDataList.add(pressureValueString);
+                }
+                }
+
+            }
+
+            @Override
+            public void onAccuracyChanged(Sensor sensor, int accuracy) {}
+        }, accelerometerSensor, SensorManager.SENSOR_DELAY_NORMAL);
+
+
+    }
+
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
         // Handle accuracy changes if needed
@@ -171,38 +224,5 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public void onSensorChanged(SensorEvent event) {
-        if(isCapturing) {
-            if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER) {
-                // Handle accelerometer values here
-                float ax = event.values[0]; // Acceleration along x-axis
-                float ay = event.values[1]; // Acceleration along y-axis
-                float az = event.values[2]; // Acceleration along z-axis
-                String accelerometerValuesString = "\nX" + ax + "Y" + ay + "Z" + az;
-                String accelerometerDisplayValuesString = "\nX" + ax + "\nY" + ay + "\nZ" + az;
-                accelerometerValuesTextView.setText("Accelerometer Values: " + accelerometerDisplayValuesString);
-                // Save accelerometer data to file
-                saveSensorDataToFile("/accelerometer_data_"+fileName, accelerometerValuesString);
-            }
-            // Handle gyroscope values
-            if (event.sensor.getType() == Sensor.TYPE_GYROSCOPE) {
-                float gx = event.values[0]; // Rotation rate around x-axis
-                float gy = event.values[1]; // Rotation rate around y-axis
-                float gz = event.values[2]; // Rotation rate around z-axis
-                String gyroscopeValuesString = "\nX" + gx + "Y" + gy + "Z" + gz;
-                String gyroscopeDisplayValuesString = "\nX" + gx + "\nY " + gy + "\nZ" + gz;
-                gyroscopeValuesTextView.setText("Gyroscope Values: " + gyroscopeDisplayValuesString);
-                // Save gyroscope data to file
-                saveSensorDataToFile("/gyroscope_data_"+fileName, gyroscopeValuesString);
-            }
-            // Handle pressure sensor value
-            if (event.sensor.getType() == Sensor.TYPE_PRESSURE) {
-                float pressure = event.values[0]; // Atmospheric pressure
-                String pressureValueString = "\nP" + String.valueOf(pressure);
-                String pressureDisplayValueString = "\n" + String.valueOf(pressure);
-                pressureValuesTextView.setText("Pressure Value: \n" + pressureDisplayValueString);
-                // Save pressure data to file
-                saveSensorDataToFile("/pressure_data_"+fileName, pressureValueString);
-            }
-        }
     }
 }

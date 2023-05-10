@@ -1702,7 +1702,6 @@ id content
 id contentPanel
 id coordinator
 id cos
-id crashButton
 id custom
 id customPanel
 id cut
@@ -1760,7 +1759,6 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
-id gyroscopeValuesTextView2
 id hideable
 id home
 id homeAsUp
@@ -1844,7 +1842,6 @@ id percent
 id pin
 id position
 id postLayout
-id pressureValuesTextView3
 id progress_circular
 id progress_horizontal
 id radio
@@ -2140,7 +2137,6 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
-string gyroscopeValues_default
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -2186,10 +2182,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
-string pressureValues_default
-string record_crash
 string record_cycle
-string recording_crash
 string recording_cycle
 string search_menu_title
 string status_bar_notification_info_overflow
