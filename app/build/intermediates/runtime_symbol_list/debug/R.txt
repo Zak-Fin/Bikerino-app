@@ -1697,6 +1697,7 @@ int id clip_horizontal 0x7f0a0069
 int id clip_vertical 0x7f0a006a
 int id collapseActionView 0x7f0a006b
 int id confirm_button 0x7f0a006c
+int id contactID 0x7f0a017b
 int id container 0x7f0a006d
 int id content 0x7f0a006e
 int id contentPanel 0x7f0a006f
@@ -1957,6 +1958,7 @@ int id uniform 0x7f0a016a
 int id unlabeled 0x7f0a016b
 int id up 0x7f0a016c
 int id useLogo 0x7f0a016d
+int id userName 0x7f0a017c
 int id view_offset_helper 0x7f0a016e
 int id visible 0x7f0a016f
 int id withText 0x7f0a0170

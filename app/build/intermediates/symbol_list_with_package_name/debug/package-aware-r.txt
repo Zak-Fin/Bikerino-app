@@ -1698,6 +1698,7 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id confirm_button
+id contactID
 id container
 id content
 id contentPanel
@@ -1958,6 +1959,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id userName
 id view_offset_helper
 id visible
 id withText

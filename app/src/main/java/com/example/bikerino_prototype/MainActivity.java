@@ -2,8 +2,12 @@ package com.example.bikerino_prototype;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import android.Manifest;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -12,6 +16,7 @@ import android.hardware.SensorManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -58,6 +63,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.net.URL;
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MainActivity extends AppCompatActivity  implements SensorEventListener{
     protected SensorManager sensorManager;
@@ -79,10 +86,12 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
     protected Button crash_button;
 
     private CountDownTimer countDownTimer;
+    private static final int REQUEST_SEND_SMS = 1;
 
     protected Timer timer;
     String apiSample ="http://192.168.0.20:5000";
-
+    protected EditText phoneNumber;
+    protected EditText contactName;
     private static final String USER_AGENT = "Mozilla/5.0";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -132,8 +141,9 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
                 crash_message.setVisibility(View.GONE);
                 crash_button.setVisibility(View.GONE);
                 timerTextView.setVisibility(View.GONE);
+                sendSms(phoneNumber.getText().toString(), (contactName.getText().toString()+"has been injured"));
             }
-        }.start();
+        };
 
 
         // Initialize TextViews
@@ -142,8 +152,44 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
 
         light_purple = Color.rgb(187,134, 252);
         dark_purple = Color.rgb(120,86, 162);
+
+        phoneNumber=findViewById(R.id.contactID);
+        contactName=findViewById(R.id.userName);
+
+// Check if we have permission to send SMS messages
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS)
+                != PackageManager.PERMISSION_GRANTED) {
+            // Permission not granted, ask the user for permission
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.SEND_SMS},
+                    REQUEST_SEND_SMS);
+        }
+
+// ...
+
+// Handle the permission request result
+
         getSensorData();
 
+    }
+    private void sendSms(String phone,String message) {
+        System.out.println(message);
+        SmsManager smsManager = SmsManager.getDefault();
+        smsManager.sendTextMessage(phone, null, message, null, null);
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+
+        if (requestCode == REQUEST_SEND_SMS) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // Permission granted, send the SMS message
+//                sendSms(phoneNumber, message);
+            } else {
+                // Permission denied, show an error message
+                Toast.makeText(this, "Permission denied to send SMS messages", Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 
     @Override
@@ -178,6 +224,15 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
         System.out.println("something happening2");
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(new Date());
         fileName = "cycle_" + timestamp + ".txt";
+
+        String regEx = "^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$";
+        Pattern pattern = Pattern.compile(regEx,Pattern.UNICODE_CASE);
+        Matcher matcher = pattern.matcher(phoneNumber.getText().toString().trim());
+
+        if(!matcher.matches() ){
+            System.out.println(phoneNumber.getText().toString().trim());
+            return ;
+        }
         isCapturing = !isCapturing;
         if(isCapturing) {
 
@@ -192,38 +247,6 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
     }
 
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    private void saveSensorDataToFile(String fileName, String data) {
-        try {
-
-            // Get the current date and time
-            LocalDateTime now = LocalDateTime.now();
-
-            // Format the date and time as a string
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-            String formattedDateTime = now.format(formatter);
-
-            // Create a file in external storage directory
-            File file = new File(getFilesDir(), fileName);
-
-            // Create a FileOutputStream to write to the file
-            FileOutputStream fos = new FileOutputStream(file, true); // 'true' to append data to file
-
-            // Create an OutputStreamWriter to write data to FileOutputStream
-            OutputStreamWriter osw = new OutputStreamWriter(fos);
-
-            // Write data to the file
-            osw.write(data);
-
-            // Close the OutputStreamWriter and FileOutputStream
-            osw.close();
-            fos.close();
-
-            Toast.makeText(this,  formattedDateTime+ "formattedDateTimeSensor data saved to file :" + file.getAbsolutePath(), Toast.LENGTH_SHORT).show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 
     public void doClassifier(ArrayList<String> accelerometerDataList,ArrayList<String> gyroscopeDataList,ArrayList<String> barometerDataList) throws IOException {
 
@@ -295,7 +318,7 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
 
         boolean yes= true;
 
-        if(yes==true){
+        if(yes){
             isCapturing = !isCapturing;
             cycleButton.setText("Record cycle");
             cycleButton.setBackgroundColor(light_purple);
@@ -306,9 +329,6 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
             cycleButton.setVisibility(View.GONE);
             countDownTimer.start();
 
-        }
-        else{
-            accelerometerValuesTextView.setText("Have you crashed: \n" + "No");
         }
 
     }

@@ -63,7 +63,40 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/contactID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter emergency contact"
+        android:layout_marginTop="203dp"
+        android:phoneNumber="true"
+        android:textColorHint="@color/abc_primary_text_material_dark"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="253dp"
+        android:layout_below="@+id/contactID"
+        android:layout_alignLeft="@+id/contactID"
+        android:layout_alignStart="@+id/contactID"
+        android:textColorHint="@color/abc_primary_text_material_dark"
+        android:hint="Enter Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
     <Button
         android:id="@+id/crash_button"
         android:text="@string/crash_button"
