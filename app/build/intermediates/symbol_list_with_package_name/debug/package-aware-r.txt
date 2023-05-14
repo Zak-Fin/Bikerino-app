@@ -1592,6 +1592,7 @@ id ALT
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
+id EmergencyCall
 id FUNCTION
 id META
 id NO_DEBUG
@@ -1702,6 +1703,8 @@ id content
 id contentPanel
 id coordinator
 id cos
+id crash_button
+id crash_message
 id custom
 id customPanel
 id cut
@@ -1934,6 +1937,7 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
+id timerTextView
 id title
 id titleDividerNoCustom
 id title_template
@@ -2095,6 +2099,7 @@ mipmap bikerino_dev_round
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+string EmergencyCall
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2133,6 +2138,8 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string crash_button
+string crash_message
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -2182,10 +2189,10 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
-string record_cycle
 string recording_cycle
 string search_menu_title
 string status_bar_notification_info_overflow
+string timerTextView
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow

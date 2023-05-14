@@ -19,6 +19,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.443" />
 
@@ -28,6 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="103dp"
+
         android:onClick="onCycleClick"
         android:text="@string/button_cycle_default"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +37,62 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<!--    <Button-->
+    <TextView
+        android:id="@+id/crash_message"
+        android:text="@string/crash_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:fontFamily="@font/ubuntu_light"
+        android:visibility="gone"
+        android:layout_marginTop="53dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:text="@string/timerTextView"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/ubuntu_light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="103dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <Button
+        android:id="@+id/crash_button"
+        android:text="@string/crash_button"
+        android:onClick="okayFunc"
+        android:fontFamily="@font/ubuntu_light"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="203dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/EmergencyCall"
+        android:text="@string/EmergencyCall"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/ubuntu_light"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="203dp"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <Button-->
 <!--        android:id="@+id/crashButton"-->
 <!--        android:layout_width="wrap_content"-->
 <!--        android:layout_height="wrap_content"-->

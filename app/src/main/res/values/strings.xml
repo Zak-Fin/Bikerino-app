@@ -4,5 +4,8 @@
     <string name="button_crash_default">Record crash</string>
     <string name="accelerometerValues_default">Have you crashed?</string>
     <string name="recording_cycle">In progress...</string>
-    <string name="record_cycle">Start</string>
+    <string name="crash_message">Oh no, you\'ve crashed!</string>
+    <string name="timerTextView">Time: </string>
+    <string name="crash_button">I\'m OK</string>
+    <string name="EmergencyCall">Emergency services have been called, remain calm and try and go into the recovery position if possible</string>
 </resources>
