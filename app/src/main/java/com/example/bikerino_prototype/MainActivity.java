@@ -24,7 +24,6 @@ import android.os.CountDownTimer;
 import android.os.Looper;
 import android.provider.Settings;
 import android.telephony.SmsManager;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -46,30 +45,14 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 
 import java.io.UnsupportedEncodingException;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.nio.charset.StandardCharsets;
 import java.text.SimpleDateFormat;
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.Locale;
-import java.util.Map;
-import java.util.Stack;
 import java.util.Timer;
-import java.util.TimerTask;
-import java.net.URL;
-import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -105,7 +88,7 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
 
     protected Timer timer;
     protected String currentLat;
-    protected String currentLang;
+    protected String currentLon;
     FusedLocationProviderClient mFusedLocationClient;
 
     // Initializing other items
@@ -164,7 +147,8 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
                 crash_button.setVisibility(View.GONE);
                 timerTextView.setVisibility(View.GONE);
                 getLastLocation();
-                sendSms(phoneNumber.getText().toString(), (contactName.getText().toString()+"has been injured at latitude:"+currentLat+"and longitude:"+currentLang));
+                String msgText = String.format("BIKERINO - CRASH DETECTED %s has been injured: current location: https://maps.google.com/?q=%s,%s", contactName.getText().toString(), currentLat, currentLon);
+                sendSms(phoneNumber.getText().toString(), msgText);
             }
         };
         // Initialize TextViews
@@ -203,7 +187,7 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
                         else{
                             System.out.println(location.getLatitude());
                             currentLat = location.getLatitude()+"";
-                            currentLang = location.getLatitude()+"";
+                            currentLon = location.getLongitude()+"";
                         }
 
                     }

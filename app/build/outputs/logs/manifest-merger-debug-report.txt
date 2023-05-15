@@ -1,243 +1,243 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
-MERGED from [com.google.android.material:material:1.2.1] C:\Users\zakbr\.gradle\caches\transforms-3\7444677ec5c8a1a9735675b41f85086d\transformed\material-1.2.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\zakbr\.gradle\caches\transforms-3\e4c4c0314d8e00beeb249787d972b18b\transformed\constraintlayout-2.0.2\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\zakbr\.gradle\caches\transforms-3\50993daf42f039b80235feda0172b094\transformed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.volley:volley:1.2.1] C:\Users\zakbr\.gradle\caches\transforms-3\d575c194d67eb5b3b733cac76a6c6e72\transformed\jetified-volley-1.2.1\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\578ca7a196f69e7abba6f392d7fe9551\transformed\jetified-play-services-location-17.0.0\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\5cb0b57fff91f23f6eac291e874a5c3d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\778fdbb7ad93816070b538029ce9bc46\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:17:1-29:12
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\b8db79a03c53178a74d36da6e8adb472\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\85b58c2b8a4bb9d4666e0dad41cd98d6\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\e7e0795924fc94e943cb6558233d79cb\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\zakbr\.gradle\caches\transforms-3\cd32f4cadd1b3d1068e4be4334f5b1ef\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\5149fc0b88bf34ac5d9555f9b25833bc\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\3b80f2524d34547c44a4a0a038576083\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\061bf4d603a1a949bd4b183c48b2c9cb\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.2.0] C:\Users\zakbr\.gradle\caches\transforms-3\464fb5dd29bd3b98c4c178f82d5fd6f5\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\9d47cd6d0a2677852bfa63a25fa687bd\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\ef7f15111f7b2ee8363bb825aee6c813\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\a95c282fa9b3e7505698b3b44075d55c\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\fee17e052fbe1219afab19b27d08a171\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\a448c238ab877e41bfdd89abc77a5b9f\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\8eac38c58d6f8abcab616b06f35b6c20\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\41a6cf8f65424e329c7bc38e11aa7b11\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.3.1] C:\Users\zakbr\.gradle\caches\transforms-3\0e5574ad6acb99c20a9c203332a04719\transformed\core-1.3.1\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\3da4a5944b49a625a6e7cdf42c1e62ed\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\bd041d6253ead2cd599cc0faaeb4758d\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\e8f0da9d88097c04b2566d643d6ea89b\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\642ca750ca564d1aeb16ab2741f16712\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\3df9cc666d8881140c6fbba32206feaa\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\98699697345d446cbcf3381110aa691c\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\ecd0be7a2f50450fe5023bb7a1185276\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\77d27b50b5e8422c5a9f302a2cefc168\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\ea535a57d73963a06ddbaa9694e3c050\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\finle\.gradle\caches\transforms-3\7444677ec5c8a1a9735675b41f85086d\transformed\material-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\finle\.gradle\caches\transforms-3\e4c4c0314d8e00beeb249787d972b18b\transformed\constraintlayout-2.0.2\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\finle\.gradle\caches\transforms-3\50993daf42f039b80235feda0172b094\transformed\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\finle\.gradle\caches\transforms-3\d575c194d67eb5b3b733cac76a6c6e72\transformed\jetified-volley-1.2.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\578ca7a196f69e7abba6f392d7fe9551\transformed\jetified-play-services-location-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\5cb0b57fff91f23f6eac291e874a5c3d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\778fdbb7ad93816070b538029ce9bc46\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\b8db79a03c53178a74d36da6e8adb472\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\85b58c2b8a4bb9d4666e0dad41cd98d6\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\e7e0795924fc94e943cb6558233d79cb\transformed\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\finle\.gradle\caches\transforms-3\cd32f4cadd1b3d1068e4be4334f5b1ef\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\5149fc0b88bf34ac5d9555f9b25833bc\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\3b80f2524d34547c44a4a0a038576083\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\061bf4d603a1a949bd4b183c48b2c9cb\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\finle\.gradle\caches\transforms-3\464fb5dd29bd3b98c4c178f82d5fd6f5\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\9d47cd6d0a2677852bfa63a25fa687bd\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\ef7f15111f7b2ee8363bb825aee6c813\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\a95c282fa9b3e7505698b3b44075d55c\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\fee17e052fbe1219afab19b27d08a171\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\a448c238ab877e41bfdd89abc77a5b9f\transformed\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\8eac38c58d6f8abcab616b06f35b6c20\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\41a6cf8f65424e329c7bc38e11aa7b11\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.1] C:\Users\finle\.gradle\caches\transforms-3\0e5574ad6acb99c20a9c203332a04719\transformed\core-1.3.1\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\3da4a5944b49a625a6e7cdf42c1e62ed\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\finle\.gradle\caches\transforms-3\bd041d6253ead2cd599cc0faaeb4758d\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\finle\.gradle\caches\transforms-3\e8f0da9d88097c04b2566d643d6ea89b\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\642ca750ca564d1aeb16ab2741f16712\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\3df9cc666d8881140c6fbba32206feaa\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\finle\.gradle\caches\transforms-3\98699697345d446cbcf3381110aa691c\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\finle\.gradle\caches\transforms-3\ecd0be7a2f50450fe5023bb7a1185276\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\finle\.gradle\caches\transforms-3\77d27b50b5e8422c5a9f302a2cefc168\transformed\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\ea535a57d73963a06ddbaa9694e3c050\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
 	package
-		INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
-		INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
+		INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
-		INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
+		INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
-		INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:2:1-36:12
+		INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:2:11-69
 uses-feature#android.hardware.telephony
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:4:5-6:36
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:4:5-6:36
 	android:required
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:6:9-33
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:6:9-33
 	android:name
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:5:9-50
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:5:9-50
 uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:8:5-82
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:8:5-82
 	android:name
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:8:22-79
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:8:22-79
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:9:5-67
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:9:5-67
 	android:name
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:9:22-64
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:9:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:10:5-79
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:10:22-76
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:10:22-76
 uses-permission#android.permission.SEND_SMS
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:11:5-67
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:11:22-64
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:11:22-64
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:12:5-80
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:12:5-80
 	android:name
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:12:22-78
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:12:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:13:5-78
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:13:5-78
 	android:name
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:13:22-76
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:13:22-76
 uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:14:5-85
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:14:5-85
 	android:name
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:14:22-82
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:14:22-82
 application
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:16:5-34:19
-MERGED from [com.google.android.material:material:1.2.1] C:\Users\zakbr\.gradle\caches\transforms-3\7444677ec5c8a1a9735675b41f85086d\transformed\material-1.2.1\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.2.1] C:\Users\zakbr\.gradle\caches\transforms-3\7444677ec5c8a1a9735675b41f85086d\transformed\material-1.2.1\AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\zakbr\.gradle\caches\transforms-3\e4c4c0314d8e00beeb249787d972b18b\transformed\constraintlayout-2.0.2\AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\zakbr\.gradle\caches\transforms-3\e4c4c0314d8e00beeb249787d972b18b\transformed\constraintlayout-2.0.2\AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\578ca7a196f69e7abba6f392d7fe9551\transformed\jetified-play-services-location-17.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\578ca7a196f69e7abba6f392d7fe9551\transformed\jetified-play-services-location-17.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\b8db79a03c53178a74d36da6e8adb472\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\b8db79a03c53178a74d36da6e8adb472\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\85b58c2b8a4bb9d4666e0dad41cd98d6\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\85b58c2b8a4bb9d4666e0dad41cd98d6\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.core:core:1.3.1] C:\Users\zakbr\.gradle\caches\transforms-3\0e5574ad6acb99c20a9c203332a04719\transformed\core-1.3.1\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.3.1] C:\Users\zakbr\.gradle\caches\transforms-3\0e5574ad6acb99c20a9c203332a04719\transformed\core-1.3.1\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\3da4a5944b49a625a6e7cdf42c1e62ed\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\3da4a5944b49a625a6e7cdf42c1e62ed\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:16:5-34:19
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\finle\.gradle\caches\transforms-3\7444677ec5c8a1a9735675b41f85086d\transformed\material-1.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\finle\.gradle\caches\transforms-3\7444677ec5c8a1a9735675b41f85086d\transformed\material-1.2.1\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\finle\.gradle\caches\transforms-3\e4c4c0314d8e00beeb249787d972b18b\transformed\constraintlayout-2.0.2\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\finle\.gradle\caches\transforms-3\e4c4c0314d8e00beeb249787d972b18b\transformed\constraintlayout-2.0.2\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\578ca7a196f69e7abba6f392d7fe9551\transformed\jetified-play-services-location-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\578ca7a196f69e7abba6f392d7fe9551\transformed\jetified-play-services-location-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\b8db79a03c53178a74d36da6e8adb472\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\b8db79a03c53178a74d36da6e8adb472\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\85b58c2b8a4bb9d4666e0dad41cd98d6\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\85b58c2b8a4bb9d4666e0dad41cd98d6\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.3.1] C:\Users\finle\.gradle\caches\transforms-3\0e5574ad6acb99c20a9c203332a04719\transformed\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] C:\Users\finle\.gradle\caches\transforms-3\0e5574ad6acb99c20a9c203332a04719\transformed\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\3da4a5944b49a625a6e7cdf42c1e62ed\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\3da4a5944b49a625a6e7cdf42c1e62ed\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.3.1] C:\Users\zakbr\.gradle\caches\transforms-3\0e5574ad6acb99c20a9c203332a04719\transformed\core-1.3.1\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.3.1] C:\Users\finle\.gradle\caches\transforms-3\0e5574ad6acb99c20a9c203332a04719\transformed\core-1.3.1\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:21:9-35
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:21:9-35
 	android:label
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:19:9-41
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:19:9-41
 	android:roundIcon
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:20:9-55
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:20:9-55
 	android:icon
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:18:9-44
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:18:9-44
 	android:allowBackup
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:17:9-35
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:17:9-35
 	android:theme
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:23:9-55
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:23:9-55
 	android:usesCleartextTraffic
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:22:9-44
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:22:9-44
 activity#com.example.bikerino_prototype.MainActivity
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:24:9-30:20
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:24:9-30:20
 	android:name
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:24:19-47
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:24:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:25:13-29:29
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:25:13-29:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:26:17-69
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:26:17-69
 	android:name
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:26:25-66
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:26:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:28:17-77
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:28:17-77
 	android:name
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:28:27-74
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:28:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:31:9-33:57
+ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:31:9-33:57
 	android:resource
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:33:13-54
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:33:13-54
 	android:name
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml:32:13-43
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml:32:13-43
 uses-sdk
-INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
-MERGED from [com.google.android.material:material:1.2.1] C:\Users\zakbr\.gradle\caches\transforms-3\7444677ec5c8a1a9735675b41f85086d\transformed\material-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.2.1] C:\Users\zakbr\.gradle\caches\transforms-3\7444677ec5c8a1a9735675b41f85086d\transformed\material-1.2.1\AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\zakbr\.gradle\caches\transforms-3\e4c4c0314d8e00beeb249787d972b18b\transformed\constraintlayout-2.0.2\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\zakbr\.gradle\caches\transforms-3\e4c4c0314d8e00beeb249787d972b18b\transformed\constraintlayout-2.0.2\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\zakbr\.gradle\caches\transforms-3\50993daf42f039b80235feda0172b094\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\zakbr\.gradle\caches\transforms-3\50993daf42f039b80235feda0172b094\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.android.volley:volley:1.2.1] C:\Users\zakbr\.gradle\caches\transforms-3\d575c194d67eb5b3b733cac76a6c6e72\transformed\jetified-volley-1.2.1\AndroidManifest.xml:5:5-43
-MERGED from [com.android.volley:volley:1.2.1] C:\Users\zakbr\.gradle\caches\transforms-3\d575c194d67eb5b3b733cac76a6c6e72\transformed\jetified-volley-1.2.1\AndroidManifest.xml:5:5-43
-MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\578ca7a196f69e7abba6f392d7fe9551\transformed\jetified-play-services-location-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\578ca7a196f69e7abba6f392d7fe9551\transformed\jetified-play-services-location-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\5cb0b57fff91f23f6eac291e874a5c3d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\5cb0b57fff91f23f6eac291e874a5c3d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\778fdbb7ad93816070b538029ce9bc46\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\778fdbb7ad93816070b538029ce9bc46\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\b8db79a03c53178a74d36da6e8adb472\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\b8db79a03c53178a74d36da6e8adb472\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\85b58c2b8a4bb9d4666e0dad41cd98d6\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\85b58c2b8a4bb9d4666e0dad41cd98d6\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\e7e0795924fc94e943cb6558233d79cb\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\e7e0795924fc94e943cb6558233d79cb\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\zakbr\.gradle\caches\transforms-3\cd32f4cadd1b3d1068e4be4334f5b1ef\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\zakbr\.gradle\caches\transforms-3\cd32f4cadd1b3d1068e4be4334f5b1ef\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\5149fc0b88bf34ac5d9555f9b25833bc\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\5149fc0b88bf34ac5d9555f9b25833bc\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\3b80f2524d34547c44a4a0a038576083\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\3b80f2524d34547c44a4a0a038576083\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\061bf4d603a1a949bd4b183c48b2c9cb\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\061bf4d603a1a949bd4b183c48b2c9cb\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] C:\Users\zakbr\.gradle\caches\transforms-3\464fb5dd29bd3b98c4c178f82d5fd6f5\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] C:\Users\zakbr\.gradle\caches\transforms-3\464fb5dd29bd3b98c4c178f82d5fd6f5\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\9d47cd6d0a2677852bfa63a25fa687bd\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\9d47cd6d0a2677852bfa63a25fa687bd\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\ef7f15111f7b2ee8363bb825aee6c813\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\ef7f15111f7b2ee8363bb825aee6c813\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\a95c282fa9b3e7505698b3b44075d55c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\a95c282fa9b3e7505698b3b44075d55c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\fee17e052fbe1219afab19b27d08a171\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\fee17e052fbe1219afab19b27d08a171\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\a448c238ab877e41bfdd89abc77a5b9f\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\a448c238ab877e41bfdd89abc77a5b9f\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\8eac38c58d6f8abcab616b06f35b6c20\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\8eac38c58d6f8abcab616b06f35b6c20\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\41a6cf8f65424e329c7bc38e11aa7b11\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\41a6cf8f65424e329c7bc38e11aa7b11\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.3.1] C:\Users\zakbr\.gradle\caches\transforms-3\0e5574ad6acb99c20a9c203332a04719\transformed\core-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.3.1] C:\Users\zakbr\.gradle\caches\transforms-3\0e5574ad6acb99c20a9c203332a04719\transformed\core-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\3da4a5944b49a625a6e7cdf42c1e62ed\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\3da4a5944b49a625a6e7cdf42c1e62ed\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\bd041d6253ead2cd599cc0faaeb4758d\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\bd041d6253ead2cd599cc0faaeb4758d\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\e8f0da9d88097c04b2566d643d6ea89b\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\zakbr\.gradle\caches\transforms-3\e8f0da9d88097c04b2566d643d6ea89b\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\642ca750ca564d1aeb16ab2741f16712\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\642ca750ca564d1aeb16ab2741f16712\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\3df9cc666d8881140c6fbba32206feaa\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\3df9cc666d8881140c6fbba32206feaa\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\98699697345d446cbcf3381110aa691c\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\98699697345d446cbcf3381110aa691c\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\ecd0be7a2f50450fe5023bb7a1185276\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\ecd0be7a2f50450fe5023bb7a1185276\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\77d27b50b5e8422c5a9f302a2cefc168\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\77d27b50b5e8422c5a9f302a2cefc168\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\ea535a57d73963a06ddbaa9694e3c050\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\ea535a57d73963a06ddbaa9694e3c050\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
-INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\finle\.gradle\caches\transforms-3\7444677ec5c8a1a9735675b41f85086d\transformed\material-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.1] C:\Users\finle\.gradle\caches\transforms-3\7444677ec5c8a1a9735675b41f85086d\transformed\material-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\finle\.gradle\caches\transforms-3\e4c4c0314d8e00beeb249787d972b18b\transformed\constraintlayout-2.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.2] C:\Users\finle\.gradle\caches\transforms-3\e4c4c0314d8e00beeb249787d972b18b\transformed\constraintlayout-2.0.2\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\finle\.gradle\caches\transforms-3\50993daf42f039b80235feda0172b094\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\finle\.gradle\caches\transforms-3\50993daf42f039b80235feda0172b094\transformed\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\finle\.gradle\caches\transforms-3\d575c194d67eb5b3b733cac76a6c6e72\transformed\jetified-volley-1.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.android.volley:volley:1.2.1] C:\Users\finle\.gradle\caches\transforms-3\d575c194d67eb5b3b733cac76a6c6e72\transformed\jetified-volley-1.2.1\AndroidManifest.xml:5:5-43
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\578ca7a196f69e7abba6f392d7fe9551\transformed\jetified-play-services-location-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\578ca7a196f69e7abba6f392d7fe9551\transformed\jetified-play-services-location-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\5cb0b57fff91f23f6eac291e874a5c3d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\5cb0b57fff91f23f6eac291e874a5c3d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\778fdbb7ad93816070b538029ce9bc46\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\778fdbb7ad93816070b538029ce9bc46\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\b8db79a03c53178a74d36da6e8adb472\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\b8db79a03c53178a74d36da6e8adb472\transformed\jetified-play-services-places-placereport-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\85b58c2b8a4bb9d4666e0dad41cd98d6\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\85b58c2b8a4bb9d4666e0dad41cd98d6\transformed\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\e7e0795924fc94e943cb6558233d79cb\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\e7e0795924fc94e943cb6558233d79cb\transformed\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\finle\.gradle\caches\transforms-3\cd32f4cadd1b3d1068e4be4334f5b1ef\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\finle\.gradle\caches\transforms-3\cd32f4cadd1b3d1068e4be4334f5b1ef\transformed\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\5149fc0b88bf34ac5d9555f9b25833bc\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\5149fc0b88bf34ac5d9555f9b25833bc\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\3b80f2524d34547c44a4a0a038576083\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\3b80f2524d34547c44a4a0a038576083\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\061bf4d603a1a949bd4b183c48b2c9cb\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\061bf4d603a1a949bd4b183c48b2c9cb\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\finle\.gradle\caches\transforms-3\464fb5dd29bd3b98c4c178f82d5fd6f5\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\finle\.gradle\caches\transforms-3\464fb5dd29bd3b98c4c178f82d5fd6f5\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\9d47cd6d0a2677852bfa63a25fa687bd\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\9d47cd6d0a2677852bfa63a25fa687bd\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\ef7f15111f7b2ee8363bb825aee6c813\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\ef7f15111f7b2ee8363bb825aee6c813\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\a95c282fa9b3e7505698b3b44075d55c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\a95c282fa9b3e7505698b3b44075d55c\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\fee17e052fbe1219afab19b27d08a171\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\fee17e052fbe1219afab19b27d08a171\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\a448c238ab877e41bfdd89abc77a5b9f\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\a448c238ab877e41bfdd89abc77a5b9f\transformed\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\8eac38c58d6f8abcab616b06f35b6c20\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\8eac38c58d6f8abcab616b06f35b6c20\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\41a6cf8f65424e329c7bc38e11aa7b11\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\41a6cf8f65424e329c7bc38e11aa7b11\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.1] C:\Users\finle\.gradle\caches\transforms-3\0e5574ad6acb99c20a9c203332a04719\transformed\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] C:\Users\finle\.gradle\caches\transforms-3\0e5574ad6acb99c20a9c203332a04719\transformed\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\3da4a5944b49a625a6e7cdf42c1e62ed\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\finle\.gradle\caches\transforms-3\3da4a5944b49a625a6e7cdf42c1e62ed\transformed\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\finle\.gradle\caches\transforms-3\bd041d6253ead2cd599cc0faaeb4758d\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\finle\.gradle\caches\transforms-3\bd041d6253ead2cd599cc0faaeb4758d\transformed\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\finle\.gradle\caches\transforms-3\e8f0da9d88097c04b2566d643d6ea89b\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\finle\.gradle\caches\transforms-3\e8f0da9d88097c04b2566d643d6ea89b\transformed\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\642ca750ca564d1aeb16ab2741f16712\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\642ca750ca564d1aeb16ab2741f16712\transformed\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\3df9cc666d8881140c6fbba32206feaa\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\3df9cc666d8881140c6fbba32206feaa\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\finle\.gradle\caches\transforms-3\98699697345d446cbcf3381110aa691c\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\finle\.gradle\caches\transforms-3\98699697345d446cbcf3381110aa691c\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\finle\.gradle\caches\transforms-3\ecd0be7a2f50450fe5023bb7a1185276\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\finle\.gradle\caches\transforms-3\ecd0be7a2f50450fe5023bb7a1185276\transformed\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\finle\.gradle\caches\transforms-3\77d27b50b5e8422c5a9f302a2cefc168\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\finle\.gradle\caches\transforms-3\77d27b50b5e8422c5a9f302a2cefc168\transformed\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\ea535a57d73963a06ddbaa9694e3c050\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\finle\.gradle\caches\transforms-3\ea535a57d73963a06ddbaa9694e3c050\transformed\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\zakbr\OneDrive\Documents\GitHub\Bikerino-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\finle\AndroidStudioProjects\Bikerino-app\app\src\main\AndroidManifest.xml
 activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
 	android:theme
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\b9e03217fc75dcdd0f120b9b88cd8c82\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\zakbr\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\finle\.gradle\caches\transforms-3\42c1288c8139b7730f9c299ac07af122\transformed\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
