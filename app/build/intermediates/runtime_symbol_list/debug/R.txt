@@ -2145,6 +2145,7 @@ int mipmap bikerino_dev_round 0x7f0e0001
 int mipmap ic_launcher 0x7f0e0002
 int mipmap ic_launcher_round 0x7f0e0003
 int plurals mtrl_badge_content_description 0x7f0f0000
+int raw alert 0x7f140000
 int string EmergencyCall 0x7f100000
 int string abc_action_bar_home_description 0x7f100001
 int string abc_action_bar_up_description 0x7f100002

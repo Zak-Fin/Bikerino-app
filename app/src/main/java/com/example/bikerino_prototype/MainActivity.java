@@ -56,6 +56,8 @@ import java.util.Timer;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import android.media.MediaPlayer;
+
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
@@ -93,6 +95,7 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
 
     // Initializing other items
     // from layout file
+
     int PERMISSION_ID = 44;
     String apiSample ="http://finmead.pythonanywhere.com/predict";
     protected EditText phoneNumber;
@@ -102,8 +105,6 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
         // Initialize SensorManager
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
@@ -147,7 +148,7 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
                 crash_button.setVisibility(View.GONE);
                 timerTextView.setVisibility(View.GONE);
                 getLastLocation();
-                String msgText = String.format("BIKERINO - CRASH DETECTED %s has been injured: current location: https://maps.google.com/?q=%s,%s", contactName.getText().toString(), currentLat, currentLon);
+                String msgText = String.format("BIKERINO - CRASH DETECTED - %s has been injured: current location: https://maps.google.com/?q=%s,%s (THIS IS A TEST, DO NOT TAKE ACTION)", contactName.getText().toString(), currentLat, currentLon);
                 sendSms(phoneNumber.getText().toString(), msgText);
             }
         };
@@ -395,6 +396,8 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
         accelerometerValuesTextView.setVisibility(View.GONE);
         cycleButton.setVisibility(View.GONE);
         countDownTimer.start();
+        MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.alert);
+        mediaPlayer.start();
     }
     public void getSensorData(){
 
