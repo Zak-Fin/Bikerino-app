@@ -1,21 +1,28 @@
 package com.example.bikerino_prototype;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.location.Location;
+import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Looper;
+import android.provider.Settings;
 import android.telephony.SmsManager;
 import android.util.Log;
 import android.view.View;
@@ -66,6 +73,14 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationRequest;
+import com.google.android.gms.location.LocationResult;
+import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+
 public class MainActivity extends AppCompatActivity  implements SensorEventListener{
     protected SensorManager sensorManager;
 
@@ -89,7 +104,14 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
     private static final int REQUEST_SEND_SMS = 1;
 
     protected Timer timer;
-    String apiSample ="http://192.168.0.20:5000";
+    protected String currentLat;
+    protected String currentLang;
+    FusedLocationProviderClient mFusedLocationClient;
+
+    // Initializing other items
+    // from layout file
+    int PERMISSION_ID = 44;
+    String apiSample ="http://finmead.pythonanywhere.com/predict";
     protected EditText phoneNumber;
     protected EditText contactName;
     private static final String USER_AGENT = "Mozilla/5.0";
@@ -141,15 +163,12 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
                 crash_message.setVisibility(View.GONE);
                 crash_button.setVisibility(View.GONE);
                 timerTextView.setVisibility(View.GONE);
-                sendSms(phoneNumber.getText().toString(), (contactName.getText().toString()+"has been injured"));
+                getLastLocation();
+                sendSms(phoneNumber.getText().toString(), (contactName.getText().toString()+"has been injured at latitude:"+currentLat+"and longitude:"+currentLang));
             }
         };
-
-
         // Initialize TextViews
         accelerometerValuesTextView = findViewById(R.id.accelerometerValuesTextView);
-
-
         light_purple = Color.rgb(187,134, 252);
         dark_purple = Color.rgb(120,86, 162);
 
@@ -164,22 +183,77 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
                     new String[]{Manifest.permission.SEND_SMS},
                     REQUEST_SEND_SMS);
         }
-
-// ...
-
-// Handle the permission request result
-
         getSensorData();
-
-    }
-    private void sendSms(String phone,String message) {
-        System.out.println(message);
-        SmsManager smsManager = SmsManager.getDefault();
-        smsManager.sendTextMessage(phone, null, message, null, null);
+        mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        getLastLocation();
     }
 
+//    Code for location data from https://www.geeksforgeeks.org/how-to-get-user-location-in-android/
+    @SuppressLint("MissingPermission")
+    private void getLastLocation() {
+        if (checkPermissions()) {
+            if (checkEnable()) {
+                mFusedLocationClient.getLastLocation().addOnCompleteListener(new OnCompleteListener<Location>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Location> task) {
+                        Location location = task.getResult();
+                        if (location == null) {
+                            requestNewLocationData();
+                        }
+                        else{
+                            System.out.println(location.getLatitude());
+                            currentLat = location.getLatitude()+"";
+                            currentLang = location.getLatitude()+"";
+                        }
+
+                    }
+                });
+            } else {
+                Toast.makeText(this, "Please turn on" + " your location...", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                startActivity(intent);
+            }
+        } else {
+
+            requestPermissions();
+        }
+    }
+
+
+    private LocationCallback mLocationCallback = new LocationCallback() {
+        @Override
+        public void onLocationResult(LocationResult locationResult) {
+            Location mLastLocation = locationResult.getLastLocation();
+        }
+    };
+    private boolean checkEnable() {
+        LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        return locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || locationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
+    }
+    private boolean checkPermissions() {
+        return ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED;
+    }
+    private void requestPermissions() {
+        ActivityCompat.requestPermissions(this, new String[]{
+                Manifest.permission.ACCESS_COARSE_LOCATION,
+                Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSION_ID);
+    }
+
+    @SuppressLint("MissingPermission")
+    private void requestNewLocationData() {
+        // Initializing LocationRequest
+        // object with appropriate methods
+        LocationRequest mLocationRequest = new LocationRequest();
+        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        mLocationRequest.setInterval(5);
+        mLocationRequest.setFastestInterval(0);
+        mLocationRequest.setNumUpdates(1);
+        mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        mFusedLocationClient.requestLocationUpdates(mLocationRequest, mLocationCallback, Looper.myLooper());
+    }
     @Override
-    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
         if (requestCode == REQUEST_SEND_SMS) {
             if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
@@ -190,15 +264,27 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
                 Toast.makeText(this, "Permission denied to send SMS messages", Toast.LENGTH_SHORT).show();
             }
         }
-    }
 
+        if (requestCode == PERMISSION_ID) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                getLastLocation();
+            }
+        }
+    }
     @Override
-    protected void onResume() {
+    public void onResume() {
         super.onResume();
-        // Register the SensorEventListener
         sensorManager.registerListener(this, accelerometerSensor, SensorManager.SENSOR_DELAY_NORMAL);
         sensorManager.registerListener(this, gyroscopeSensor, SensorManager.SENSOR_DELAY_NORMAL);
         sensorManager.registerListener(this, pressureSensor, SensorManager.SENSOR_DELAY_NORMAL);
+        if (checkPermissions()) {
+            getLastLocation();
+        }
+    }
+    private void sendSms(String phone,String message) {
+        System.out.println(message);
+        SmsManager smsManager = SmsManager.getDefault();
+        smsManager.sendTextMessage(phone, null, message, null, null);
     }
 
     @Override
@@ -211,13 +297,14 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
     public void okayFunc(View view){
         // Cancel the countdown timer
         countDownTimer.cancel();
-
         // Hide the elements
         crash_message.setVisibility(View.GONE);
         crash_button.setVisibility(View.GONE);
         timerTextView.setVisibility(View.GONE);
         accelerometerValuesTextView.setVisibility(View.VISIBLE);
         cycleButton.setVisibility(View.VISIBLE);
+        phoneNumber.setVisibility(View.VISIBLE);
+        contactName.setVisibility(View.VISIBLE);
 
     }
     public void onCycleClick(View view){
@@ -239,98 +326,91 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
             System.out.println("something happening");
             cycleButton.setText("Recording cycle...");
             cycleButton.setBackgroundColor(dark_purple);
+            phoneNumber.setVisibility(View.GONE);
+            contactName.setVisibility(View.GONE);
         }
         else{
             cycleButton.setText("Record cycle");
             cycleButton.setBackgroundColor(light_purple);
-        }
+            phoneNumber.setVisibility(View.VISIBLE);
+            contactName.setVisibility(View.VISIBLE);
+            accelerometerValuesTextView.setVisibility(View.VISIBLE);}
     }
 
 
 
-    public void doClassifier(ArrayList<String> accelerometerDataList,ArrayList<String> gyroscopeDataList,ArrayList<String> barometerDataList) throws IOException {
+    public void doClassifier(ArrayList<String> accelerometerDataList,ArrayList<String> gyroscopeDataList,ArrayList<String> barometerDataList) throws IOException, JSONException {
+        final boolean[] hasCrash = {false};
 
-//        URL url = new URL("https://postman-echo.com/get/");
-//        RequestQueue queue = Volley.newRequestQueue(this);
-//        StringRequest stringRequest = new StringRequest(Request.Method.GET, apiSample,
-//                new Response.Listener<String>() {
-//                    @Override
-//                    public void onResponse(String response) {
-//                        System.out.println(response);
-//                    }
-//                }, new Response.ErrorListener() {
-//            @Override
-//            public void onErrorResponse(VolleyError error){
-//                System.out.println(error);
-//            }
-//        });
-//        queue.add(stringRequest);
-        String sample ="http://192.168.0.20:5000/predict";
         RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
-//        JSONObject jsonBody = new JSONObject();
-//        try {
-//            jsonBody.put("Title", "Android Volley Demo");
-//            jsonBody.put("Author", "BNK");
-//        } catch (JSONException e) {
-//            throw new RuntimeException(e);
-//        }
-//        JSONObject obj = new JSONObject();
-        final String requestBody = accelerometerDataList.toString();
+        JSONObject test = new JSONObject();
+        test.put("data", accelerometerDataList.toString());
+//        new JSONObjectRequest requestBody = accelerometerDataList.toString();
+        final String requestBody = test.toString();
+        System.out.println(requestBody);
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, apiSample,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {;
+                        try {
+                            JSONObject jsonObject = new JSONObject(response);
+                            String result = jsonObject.getString("result");
+                            if (result.equals("['cycle']")) {
+                                System.out.println("continue cycling");
+                            } else if (result.equals("['crash']")) {
+                                handleCrash();
+                            }
 
-//        StringRequest stringRequest = new StringRequest(Request.Method.POST, sample,
-//                new Response.Listener<String>() {
-//                    @Override
-//                    public void onResponse(String response) {
-//                        Log.i("VOLLEY", response);
-//                    }
-//                }, new Response.ErrorListener() {
-//            @Override
-//            public void onErrorResponse(VolleyError error){
-//                System.out.println("Error");
-//            }
-//        }){
-//            @Override
-//            public String getBodyContentType() {
-//                return "application/json; charset=utf-8";
-//            }
-//            @Override
-//            public byte[] getBody() throws AuthFailureError {
-//                try {
-//                    return requestBody == null ? null : requestBody.getBytes("utf-8");
-//                } catch (UnsupportedEncodingException uee) {
-//                    VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", requestBody, "utf-8");
-//                    return null;
-//                }
-//            }
-//            @Override
-//            protected Response<String> parseNetworkResponse(NetworkResponse response) {
-//                String responseString = "";
-//                if (response != null) {
-////                    responseString = String.valueOf(response.statusCode);
-//                    // can get more details such as response.headers
-//
-//                    responseString = new String(response.data);
-//                }
-//                return Response.success(responseString, HttpHeaderParser.parseCacheHeaders(response));
-//            }
-//        };
-//        queue.add(stringRequest);
+                        } catch (JSONException e) {
+                            throw new RuntimeException(e);
+                        }
 
-        boolean yes= true;
+                    }
+                }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error){
+                System.out.println("Error");
+            }
+        }){
+            @Override
+            public String getBodyContentType() {
+                return "application/json; charset=utf-8";
+            }
+            @Override
+            public byte[] getBody() throws AuthFailureError {
+                try {
+                    return requestBody == null ? null : requestBody.getBytes("utf-8");
+                } catch (UnsupportedEncodingException uee) {
+                    VolleyLog.wtf("Unsupported Encoding while trying to get the bytes of %s using %s", requestBody, "utf-8");
+                    return null;
+                }
+            }
+            @Override
+            protected Response<String> parseNetworkResponse(NetworkResponse response) {
+                String responseString = "";
+                if (response != null) {
+//                    System.out.println(response.data);
+                    responseString = new String(response.data);
+                    System.out.println(responseString);
+                }
+                return Response.success(responseString, HttpHeaderParser.parseCacheHeaders(response));
+            }
+        };
+        queue.add(stringRequest);
 
-        if(yes){
-            isCapturing = !isCapturing;
-            cycleButton.setText("Record cycle");
-            cycleButton.setBackgroundColor(light_purple);
-            crash_message.setVisibility(View.VISIBLE);
-            crash_button.setVisibility(View.VISIBLE);
-            timerTextView.setVisibility(View.VISIBLE);
-            accelerometerValuesTextView.setVisibility(View.GONE);
-            cycleButton.setVisibility(View.GONE);
-            countDownTimer.start();
 
-        }
+    }
+    public void handleCrash(){
+        isCapturing = !isCapturing;
+        cycleButton.setText("Record cycle");
+        cycleButton.setBackgroundColor(light_purple);
+        crash_message.setVisibility(View.VISIBLE);
+        crash_button.setVisibility(View.VISIBLE);
+        timerTextView.setVisibility(View.VISIBLE);
 
+        accelerometerValuesTextView.setVisibility(View.GONE);
+        cycleButton.setVisibility(View.GONE);
+        countDownTimer.start();
     }
     public void getSensorData(){
 
@@ -355,7 +435,7 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
                 if (elapsedTime >= 4.9 * 1000000000L) { // Check if 5 seconds have elapsed
                     try {
                         doClassifier(accelerometerDataList,gyroscopeDataList,barometerDataList);
-                    } catch (IOException e) {
+                    } catch (IOException | JSONException e) {
                         throw new RuntimeException(e);
                     }
                     startTime = event.timestamp;

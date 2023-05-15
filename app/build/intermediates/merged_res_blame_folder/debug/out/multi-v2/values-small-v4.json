@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.bikerino_prototype.app-mergeDebugResources-13:/values-small-v4/values-small-v4.xml",
+            "outputFile": "com.example.bikerino_prototype.app-mergeDebugResources-15:/values-small-v4/values-small-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\zakbr\\.gradle\\caches\\transforms-3\\7444677ec5c8a1a9735675b41f85086d\\transformed\\material-1.2.1\\res\\values-small-v4\\values-small-v4.xml",
