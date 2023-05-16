@@ -4,7 +4,7 @@
             "outputFile": "com.example.bikerino_prototype.app-mergeDebugResources-15:/values-h480dp-land-v13/values-h480dp-land-v13.xml",
             "map": [
                 {
-                    "source": "/Users/zakbrook/.gradle/caches/transforms-3/7444677ec5c8a1a9735675b41f85086d/transformed/material-1.2.1/res/values-h480dp-land-v13/values-h480dp-land-v13.xml",
+                    "source": "C:\\Users\\finle\\.gradle\\caches\\transforms-3\\7444677ec5c8a1a9735675b41f85086d\\transformed\\material-1.2.1\\res\\values-h480dp-land-v13\\values-h480dp-land-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",

@@ -354,9 +354,10 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
                             JSONObject jsonObject = new JSONObject(response);
                             String result = jsonObject.getString("result");
                             if (result.equals("['cycle']")) {
-                                System.out.println("continue cycling");
-                            } else if (result.equals("['crash']")) {
+
                                 handleCrash();
+                            } else if (result.equals("['crash']")) {
+                                System.out.println("continue cycling");
                             }
 
                         } catch (JSONException e) {
