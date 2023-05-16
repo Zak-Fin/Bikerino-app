@@ -31,7 +31,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.BikerinoPrototype"
         android:usesCleartextTraffic="true" >
-        <activity android:name="com.example.bikerino_prototype.MainActivity" >
+        <activity
+            android:name="com.example.bikerino_prototype.MainActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -4,7 +4,7 @@
             "outputFile": "com.example.bikerino_prototype.app-mergeDebugResources-15:/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\finle\\.gradle\\caches\\transforms-3\\50993daf42f039b80235feda0172b094\\transformed\\appcompat-1.2.0\\res\\values-v17\\values-v17.xml",
+                    "source": "/Users/zakbrook/.gradle/caches/transforms-3/50993daf42f039b80235feda0172b094/transformed/appcompat-1.2.0/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
