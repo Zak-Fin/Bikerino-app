@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@color/purple_bg">
+    android:background="@color/purple_bg"
+    tools:context=".MainActivity">
 
 
     <TextView
@@ -14,30 +14,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/ubuntu_light"
+        android:gravity="center"
+        android:lineSpacingExtra="8sp"
         android:text="@string/accelerometerValues_default"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+
         android:textColor="@color/purple_200"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
-
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.192" />
+        app:layout_constraintVertical_bias="0.229" />
 
     <Button
         android:id="@+id/cycleButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="428dp"
 
         android:onClick="onCycleClick"
         android:text="@string/button_cycle_default"
         app:backgroundTint="@color/bikerino_dev_background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606" />
 
     <TextView
         android:id="@+id/crash_message"
@@ -73,15 +75,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="260dp"
         android:gravity="center"
         android:hint="Enter emergency contact"
         android:phoneNumber="true"
         android:textColor="@color/bikerino_dev_background"
         android:textColorHint="@color/abc_primary_text_material_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427" />
 
     <EditText
         android:id="@+id/userName"
@@ -90,36 +93,37 @@
         android:layout_below="@+id/contactID"
         android:layout_alignStart="@+id/contactID"
         android:layout_alignLeft="@+id/contactID"
-        android:layout_marginTop="308dp"
         android:gravity="center"
         android:hint="Enter your name"
         android:textColor="@color/bikerino_dev_background"
         android:textColorHint="@color/abc_primary_text_material_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.518" />
 
     <Button
         android:id="@+id/crash_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="404dp"
         android:fontFamily="@font/ubuntu_light"
         android:onClick="okayFunc"
         android:text="@string/crash_button"
         android:visibility="gone"
         app:backgroundTint="@color/bikerino_dev_background"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.606" />
 
     <TextView
         android:id="@+id/EmergencyCall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="512dp"
+        android:layout_width="331dp"
+        android:layout_height="245dp"
         android:autoText="false"
         android:fontFamily="@font/ubuntu_light"
         android:gravity="center"
@@ -127,22 +131,24 @@
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/teal_200"
+        android:textStyle="bold"
         android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.421" />
 
     <!--    <Button-->
-<!--        android:id="@+id/crashButton"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginTop="171dp"-->
-<!--        android:onClick="onCrashClick"-->
-<!--        android:text="@string/button_crash_default"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.5"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
+    <!--        android:id="@+id/crashButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="171dp"-->
+    <!--        android:onClick="onCrashClick"-->
+    <!--        android:text="@string/button_crash_default"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.5"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

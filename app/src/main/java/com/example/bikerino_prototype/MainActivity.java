@@ -101,10 +101,17 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
     protected EditText phoneNumber;
     protected EditText contactName;
     private static final String USER_AGENT = "Mozilla/5.0";
+    protected MediaPlayer beaconSfx;
+    protected MediaPlayer crashSfx;
+    protected MediaPlayer emergencySfx;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        beaconSfx = MediaPlayer.create(MainActivity.this, R.raw.beacon);
+        crashSfx = MediaPlayer.create(MainActivity.this, R.raw.crash_detected);
+        emergencySfx = MediaPlayer.create(MainActivity.this, R.raw.emergency_contact);
         // Initialize SensorManager
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
@@ -150,6 +157,7 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
                 getLastLocation();
                 String msgText = String.format("BIKERINO - CRASH DETECTED - %s has been injured: current location: https://maps.google.com/?q=%s,%s (THIS IS A TEST, DO NOT TAKE ACTION)", contactName.getText().toString(), currentLat, currentLon);
                 sendSms(phoneNumber.getText().toString(), msgText);
+                emergencySfx.start();
             }
         };
         // Initialize TextViews
@@ -282,6 +290,8 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
     public void okayFunc(View view){
         // Cancel the countdown timer
         countDownTimer.cancel();
+        beaconSfx.stop();
+        crashSfx.stop();
         // Hide the elements
         crash_message.setVisibility(View.GONE);
         crash_button.setVisibility(View.GONE);
@@ -290,6 +300,9 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
         cycleButton.setVisibility(View.VISIBLE);
         phoneNumber.setVisibility(View.VISIBLE);
         contactName.setVisibility(View.VISIBLE);
+        emergencySfx = MediaPlayer.create(MainActivity.this, R.raw.emergency_contact);
+        crashSfx = MediaPlayer.create(MainActivity.this, R.raw.crash_detected);
+        beaconSfx = MediaPlayer.create(MainActivity.this, R.raw.beacon);
 
     }
     public void onCycleClick(View view){
@@ -396,8 +409,8 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
         accelerometerValuesTextView.setVisibility(View.GONE);
         cycleButton.setVisibility(View.GONE);
         countDownTimer.start();
-        MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, R.raw.alert);
-        mediaPlayer.start();
+        crashSfx.start();
+        beaconSfx.start();
     }
     public void getSensorData(){
 

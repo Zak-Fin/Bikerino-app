@@ -4,10 +4,6 @@
         "source": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-main-19:\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "com.example.bikerino_prototype.app-merged_res-17:/raw_alert.mp3.flat",
-        "source": "com.example.bikerino_prototype.app-main-19:/raw/alert.mp3"
-    },
-    {
         "merged": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-merged_res-17:\\drawable-ldpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-pngs-12:\\drawable-ldpi\\ic_launcher_background.png"
     },
@@ -56,6 +52,10 @@
         "source": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-pngs-12:\\drawable-xxhdpi\\bikerino_dev_foreground.png"
     },
     {
+        "merged": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-merged_res-17:\\raw_beacon.wav.flat",
+        "source": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-main-19:\\raw\\beacon.wav"
+    },
+    {
         "merged": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-merged_res-17:\\mipmap-anydpi-v26_bikerino_dev_round.xml.flat",
         "source": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-main-19:\\mipmap-anydpi-v26\\bikerino_dev_round.xml"
     },
@@ -66,6 +66,14 @@
     {
         "merged": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-merged_res-17:\\drawable-ldpi_bikerino_dev_foreground.png.flat",
         "source": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-pngs-12:\\drawable-ldpi\\bikerino_dev_foreground.png"
+    },
+    {
+        "merged": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-merged_res-17:\\raw_crash_detected.mp3.flat",
+        "source": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-main-19:\\raw\\crash_detected.mp3"
+    },
+    {
+        "merged": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-merged_res-17:\\raw_alert.mp3.flat",
+        "source": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-main-19:\\raw\\alert.mp3"
     },
     {
         "merged": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-merged_res-17:\\drawable-mdpi_ic_launcher_background.png.flat",
@@ -136,6 +144,10 @@
         "source": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-pngs-12:\\drawable-xxhdpi\\ic_launcher_background.png"
     },
     {
+        "merged": "com.example.bikerino_prototype.app-merged_res-17:/layout_activity_main.xml.flat",
+        "source": "com.example.bikerino_prototype.app-main-19:/layout/activity_main.xml"
+    },
+    {
         "merged": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-merged_res-17:\\mipmap-mdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-main-19:\\mipmap-mdpi\\ic_launcher_round.png"
     },
@@ -158,6 +170,10 @@
     {
         "merged": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-merged_res-17:\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-main-19:\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-merged_res-17:\\raw_emergency_contact.mp3.flat",
+        "source": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-main-19:\\raw\\emergency_contact.mp3"
     },
     {
         "merged": "C:\\Users\\finle\\.gradle\\daemon\\8.0\\com.example.bikerino_prototype.app-merged_res-17:\\mipmap-mdpi_bikerino_dev.png.flat",

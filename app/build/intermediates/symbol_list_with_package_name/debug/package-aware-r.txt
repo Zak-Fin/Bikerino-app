@@ -2147,6 +2147,9 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 raw alert
+raw beacon
+raw crash_detected
+raw emergency_contact
 string EmergencyCall
 string abc_action_bar_home_description
 string abc_action_bar_up_description

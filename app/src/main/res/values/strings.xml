@@ -2,10 +2,10 @@
     <string name="app_name">Bikerino-Prototype</string>
     <string name="button_cycle_default">Start</string>
     <string name="button_crash_default">Record crash</string>
-    <string name="accelerometerValues_default">Bikerino crash detector</string>
+    <string name="accelerometerValues_default">Bikerino\ncrash detection</string>
     <string name="recording_cycle">In progress...</string>
     <string name="crash_message">Oh no, you\'ve crashed!</string>
     <string name="timerTextView">Time: </string>
     <string name="crash_button">I\'m OK</string>
-    <string name="EmergencyCall">Emergency services have been called, remain calm and try and go into the recovery position if possible</string>
+    <string name="EmergencyCall">Emergency services know where you are and are on the way. If you feel able: try going into recovery position. If you are in the road, try to move out of the way.</string>
 </resources>
