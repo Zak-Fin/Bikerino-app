@@ -353,10 +353,10 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
                         try {
                             JSONObject jsonObject = new JSONObject(response);
                             String result = jsonObject.getString("result");
-                            if (result.equals("['cycle']")) {
+                            if (result.equals("['crash']")) {
 
                                 handleCrash();
-                            } else if (result.equals("['crash']")) {
+                            } else if (result.equals("['cycle']")) {
                                 System.out.println("continue cycling");
                             }
 
