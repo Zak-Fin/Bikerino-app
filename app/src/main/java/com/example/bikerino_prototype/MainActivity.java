@@ -85,13 +85,13 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
     protected TextView EmergencyCall;
     protected Button crash_button;
 
-    private CountDownTimer countDownTimer;
+    private CountDownTimer countdown;
     private static final int REQUEST_SEND_SMS = 1;
 
     protected Timer timer;
     protected String currentLat;
     protected String currentLon;
-    FusedLocationProviderClient mFusedLocationClient;
+    FusedLocationProviderClient locationclient;
 
     // Initializing other items
     // from layout file
@@ -143,10 +143,10 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
         crash_button = findViewById(R.id.crash_button);
         EmergencyCall = findViewById(R.id.EmergencyCall);
 
-        countDownTimer = new CountDownTimer(20000, 1000) {
-            public void onTick(long millisUntilFinished) {
+        countdown = new CountDownTimer(20000, 1000) {
+            public void onTick(long time) {
                 // Update the UI to show the remaining time
-                timerTextView.setText("Time remaining: " + millisUntilFinished / 1000);
+                timerTextView.setText("Time remaining: " + time / 1000);
             }
 
             public void onFinish() {
@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
         phoneNumber=findViewById(R.id.contactID);
         contactName=findViewById(R.id.userName);
 
-// Check if we have permission to send SMS messages
+        // Check permission
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS)
                 != PackageManager.PERMISSION_GRANTED) {
             // Permission not granted, ask the user for permission
@@ -177,21 +177,22 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
                     REQUEST_SEND_SMS);
         }
         getSensorData();
-        mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
+        locationclient = LocationServices.getFusedLocationProviderClient(this);
         getLastLocation();
     }
-
+//    NOTE NOTE NOTE
 //    Code for location data from https://www.geeksforgeeks.org/how-to-get-user-location-in-android/
+//    NOTE NOTE NOTE
     @SuppressLint("MissingPermission")
     private void getLastLocation() {
         if (checkPermissions()) {
             if (checkEnable()) {
-                mFusedLocationClient.getLastLocation().addOnCompleteListener(new OnCompleteListener<Location>() {
+                locationclient.getLastLocation().addOnCompleteListener(new OnCompleteListener<Location>() {
                     @Override
                     public void onComplete(@NonNull Task<Location> task) {
                         Location location = task.getResult();
                         if (location == null) {
-                            requestNewLocationData();
+                            newLocation();
                         }
                         else{
                             System.out.println(location.getLatitude());
@@ -212,7 +213,18 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
         }
     }
 
-
+    @SuppressLint("MissingPermission")
+    private void newLocation() {
+        // Initializing LocationRequest
+        // object with appropriate methods
+        LocationRequest mLocationRequest = new LocationRequest();
+        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
+        mLocationRequest.setInterval(5);
+        mLocationRequest.setFastestInterval(0);
+        mLocationRequest.setNumUpdates(1);
+        locationclient = LocationServices.getFusedLocationProviderClient(this);
+        locationclient.requestLocationUpdates(mLocationRequest, mLocationCallback, Looper.myLooper());
+    }
     private LocationCallback mLocationCallback = new LocationCallback() {
         @Override
         public void onLocationResult(LocationResult locationResult) {
@@ -232,34 +244,23 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
                 Manifest.permission.ACCESS_FINE_LOCATION}, PERMISSION_ID);
     }
 
-    @SuppressLint("MissingPermission")
-    private void requestNewLocationData() {
-        // Initializing LocationRequest
-        // object with appropriate methods
-        LocationRequest mLocationRequest = new LocationRequest();
-        mLocationRequest.setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
-        mLocationRequest.setInterval(5);
-        mLocationRequest.setFastestInterval(0);
-        mLocationRequest.setNumUpdates(1);
-        mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
-        mFusedLocationClient.requestLocationUpdates(mLocationRequest, mLocationCallback, Looper.myLooper());
-    }
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
 
-        if (requestCode == REQUEST_SEND_SMS) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+    @Override
+    public void onRequestPermissionsResult(int rcode, @NonNull String[] perm, @NonNull int[] gResults) {
+        super.onRequestPermissionsResult(rcode, perm, gResults);
+
+        if (rcode == REQUEST_SEND_SMS) {
+            if (gResults.length > 0 && gResults[0] == PackageManager.PERMISSION_GRANTED) {
                 // Permission granted, send the SMS message
-//                sendSms(phoneNumber, message);
+                System.out.println("Permission granted for SMS");
             } else {
                 // Permission denied, show an error message
                 Toast.makeText(this, "Permission denied to send SMS messages", Toast.LENGTH_SHORT).show();
             }
         }
 
-        if (requestCode == PERMISSION_ID) {
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+        if (rcode == PERMISSION_ID) {
+            if (gResults.length > 0 && gResults[0] == PackageManager.PERMISSION_GRANTED) {
                 getLastLocation();
             }
         }
@@ -289,7 +290,7 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
 
     public void okayFunc(View view){
         // Cancel the countdown timer
-        countDownTimer.cancel();
+        countdown.cancel();
         beaconSfx.stop();
         crashSfx.stop();
         // Hide the elements
@@ -306,10 +307,7 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
 
     }
     public void onCycleClick(View view){
-        System.out.println("something happening2");
-        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(new Date());
-        fileName = "cycle_" + timestamp + ".txt";
-
+        System.out.println("pressed");
         String regEx = "^[\\+]?[(]?[0-9]{3}[)]?[-\\s\\.]?[0-9]{3}[-\\s\\.]?[0-9]{4,6}$";
         Pattern pattern = Pattern.compile(regEx,Pattern.UNICODE_CASE);
         Matcher matcher = pattern.matcher(phoneNumber.getText().toString().trim());
@@ -409,7 +407,7 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
 
         accelerometerValuesTextView.setVisibility(View.GONE);
         cycleButton.setVisibility(View.GONE);
-        countDownTimer.start();
+        countdown.start();
         crashSfx.start();
         beaconSfx.start();
     }
